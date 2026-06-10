@@ -51,23 +51,23 @@ Outskill
 
 ### Home Page
 
-![Home Page](https://github.com/rahul-tech-eng/rahul_portfolio/blob/fbc364415194a32f406e5f3244339f5bc375fa9a/assests/2026-06-08%20(15).png)
+![Home Page](https://github.com/rahul-tech-eng/rahul_portfolio/blob/dadf9dfe7e1640e64065ac24f2525e6c57ae97b1/assests/2026-06-08%20(15).png)
 
 ### Education Section
 
-![Education Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/fbc364415194a32f406e5f3244339f5bc375fa9a/assests/2026-06-08%20(16).png)
+![Education Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/dadf9dfe7e1640e64065ac24f2525e6c57ae97b1/assests/2026-06-08%20(16).png)
 
 ### Skills Section
 
-![Skills Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/fbc364415194a32f406e5f3244339f5bc375fa9a/assests/2026-06-08%20(17).png)
+![Skills Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/dadf9dfe7e1640e64065ac24f2525e6c57ae97b1/assests/2026-06-08%20(17).png)
 
 ### Projects Section
 
-![Projects Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/fbc364415194a32f406e5f3244339f5bc375fa9a/assests/2026-06-08%20(18).png)
+![Projects Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/dadf9dfe7e1640e64065ac24f2525e6c57ae97b1/assests/2026-06-08%20(18).png)
 
 ### Certifications Section
 
-![Certifications Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/fbc364415194a32f406e5f3244339f5bc375fa9a/assests/2026-06-08%20(19).png)
+![Certifications Section](https://github.com/rahul-tech-eng/rahul_portfolio/blob/dadf9dfe7e1640e64065ac24f2525e6c57ae97b1/assests/2026-06-08%20(19).png)
 
 ## Live Demo
 
