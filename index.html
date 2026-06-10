@@ -1,0 +1,606 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Rahul Chand — Web Developer skilled in HTML, CSS, JavaScript, and MySQL. B.Tech Computer Science student building responsive, user-friendly websites." />
+  <meta name="keywords" content="Rahul Chand, web developer, HTML, CSS, JavaScript, MySQL, portfolio, Delhi" />
+  <meta name="author" content="Rahul Chand" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f1923" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rahul Chand — Web Developer" />
+  <meta property="og:description" content="B.Tech CS student building responsive, user-friendly websites with HTML, CSS, JavaScript and MySQL." />
+  <meta property="og:url" content="https://rahulchand.dev" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Rahul Chand — Web Developer" />
+  <meta name="twitter:description" content="B.Tech CS student building responsive, user-friendly websites." />
+
+  <link rel="canonical" href="https://rahulchand.dev/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Fira+Code:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <title>Rahul Chand — Web Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahul Chand",
+    "url": "https://rahulchand.dev",
+    "email": "xxxxx@gmail.com",
+    "telephone": "+918800520690",
+    "jobTitle": "Web Developer",
+    "description": "B.Tech Computer Science student skilled in HTML, CSS, JavaScript, and MySQL.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" },
+    "sameAs": [
+      "https://linkedin.com/in/rahul-chand",
+      "https://github.com/rahul"
+    ],
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "MySQL", "C", "C++"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══ HEADER ════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <a href="/" class="site-logo" aria-label="Rahul Chand — Home">
+        RC<span aria-hidden="true">.</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false">
+          <rect width="14" height="1.5" fill="currentColor"/>
+          <rect y="4.25" width="14" height="1.5" fill="currentColor"/>
+          <rect y="8.5" width="14" height="1.5" fill="currentColor"/>
+        </svg>
+        Menu
+      </button>
+
+      <nav
+        id="primary-nav"
+        class="primary-nav"
+        aria-label="Primary navigation"
+        data-open="false"
+      >
+        <ul class="nav-list" role="list">
+          <li><a href="#about"   >About</a></li>
+          <li><a href="#skills"  >Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certs"   >Certifications</a></li>
+          <li><a href="#contact" >Contact</a></li>
+          <li><a href="resume.html" aria-label="View résumé page">Résumé</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ══ MAIN ══════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+
+        <p class="hero-badge" aria-label="Status: Open to opportunities">
+          Open to opportunities
+        </p>
+
+        <h1 id="hero-heading" class="hero-name">
+          Rahul<br /><span class="teal">Chand</span>
+        </h1>
+
+        <p class="hero-role mono" aria-label="Role: Web Developer">
+          &lt; Web Developer /&gt;
+        </p>
+
+        <p class="hero-objective">
+         Motivated Computer Science student with skills in HTML, CSS, JavaScript, and MySQL. Seeking a Web Development internship to apply my technical skills, build real-world projects, and contribute to creating responsive and user-friendly web applications.
+        </p>
+
+        <div class="hero-links">
+          <a
+            href="https://github.com/rahul-tech-eng"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            aria-label="View GitHub profile (opens in new tab)"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.4c1.02 0 2.05.13 3.01.4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rahul-chand-6aa46a337/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost"
+            aria-label="View LinkedIn profile (opens in new tab)"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Get In Touch
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About / Education -->
+    <section
+      id="about"
+      class="section"
+      aria-labelledby="about-heading"
+    >
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Education</p>
+        <h2 id="about-heading">Academic Background</h2>
+
+        <div class="edu-grid" role="list" aria-label="Educational qualifications">
+
+          <article class="edu-card" role="listitem">
+            <p class="edu-degree">B.Tech in Computer Science</p>
+            <p class="edu-school">Jims Engineering Management Technical Campus</p>
+            <p class="edu-meta">
+              <time datetime="2024">2024</time> — <time datetime="2028">2028</time>
+            </p>
+          </article>
+
+          <article class="edu-card" role="listitem">
+            <p class="edu-degree">XII — CBSE</p>
+            <p class="edu-school">Kendriya Vidyalaya Rk.puram</p>
+            <p class="edu-meta">
+              Delhi &nbsp;·&nbsp; <time datetime="2024">2024</time>
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" role="separator" />
+
+    <!-- Skills -->
+    <section
+      id="skills"
+      class="section skills-section"
+      aria-labelledby="skills-heading"
+    >
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Skills</p>
+        <h2 id="skills-heading">Technical Skills</h2>
+
+        <div class="skills-grid" role="list" aria-label="Technical skill categories">
+
+           
+          <article class="skill-card" role="listitem">
+            <p class="skill-category">Web Technologies</p>
+            <ul class="skill-pills" aria-label="Web technologies">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <p class="skill-category">Programing Languages</p>
+            <ul class="skill-pills" aria-label="Programming languages">
+              <li>Java</li>
+              <li>c</li>
+              <li>C++</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" role="listitem">
+            <p class="skill-category">Database</p>
+            <ul class="skill-pills" aria-label="Database technologies">
+              <li>MySQL</li>
+            </ul>
+          </article>
+
+           <article class="skill-card" role="listitem">
+            <p class="skill-category">Tools</p>
+            <ul class="skill-pills" aria-label="Database technologies">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>vs code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" role="separator" />
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="section"
+      aria-labelledby="projects-heading"
+    >
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Projects</p>
+        <h2 id="projects-heading">Projects</h2>
+
+        <div class="projects-grid" role="list" aria-label="Portfolio projects">
+
+          <!-- Calculator -->
+          <article class="project-card" role="listitem" aria-labelledby="proj1-title">
+            <p class="project-date">
+              <time datetime="2026-05">May 2026</time>
+            </p>
+            <h3 id="proj1-title" class="project-title">Calculator Web Application</h3>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <ul class="project-points" aria-label="Project details">
+              <li>Implemented basic and scientific mathematical operations.</li>
+              <li>Designed a responsive and user-friendly interface.</li>
+              <li>Used JavaScript for real-time calculations and functionality.</li>
+            </ul>
+          </article>
+
+          <!-- Tic Tac Toe -->
+          <article class="project-card" role="listitem" aria-labelledby="proj2-title">
+            <p class="project-date">
+              <time datetime="2026-03">March 2026</time>
+            </p>
+            <h3 id="proj2-title" class="project-title">Tic Tac Toe Web Game</h3>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <ul class="project-points" aria-label="Project details">
+              <li>Implemented core game logic including turn management, win detection, and draw conditions using JavaScript.</li>
+              <li>Designed a responsive and user-friendly interface with CSS styling.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" role="separator" />
+
+    <!-- Certifications -->
+    <section
+      id="certs"
+      class="section"
+      aria-labelledby="certs-heading"
+    >
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Certifications</p>
+        <h2 id="certs-heading">Certifications</h2>
+
+        <article class="cert-card" aria-labelledby="cert1-title">
+          <div>
+            <h3 id="cert1-title" class="cert-name">Generative AI Mastermind</h3>
+            <p class="cert-issuer">Outskill · Virtual</p>
+            <p class="cert-desc">
+              Attended the Generative AI Mastermind Webinar organized by Outskill,
+              where fundamentals of Generative AI, prompt engineering, AI automation
+              tools, custom GPT creation, and practical AI applications for content
+              creation were covered.
+            </p>
+          </div>
+          <time class="cert-date" datetime="2025-11">Nov 2025</time>
+        </article>
+
+        <article class="cert-card" aria-labelledby="cert1-title">
+          <div>
+            <h3 id="cert1-title" class="cert-name">Introduction to Generative AI</h3>
+            <p class="cert-issuer">Google Cloud (Coursera)</p>
+            <p class="cert-desc">
+             Learned the fundamentals of Generative AI, Large Language Models (LLMs), and their real-world applications.
+            Gained understanding of how AI models generate text, images, and other content.
+             Explored basic concepts of machine learning and responsible AI practices.
+            </p>
+          </div>
+          <time class="cert-date" datetime="2025-11">July 2025</time>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="divider" role="separator" />
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="section"
+      aria-labelledby="contact-heading"
+    >
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Contact</p>
+
+        <div class="contact-wrap">
+
+          <!-- Info -->
+          <div class="contact-info">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <p>Have a project or opportunity? Feel free to reach out.</p>
+
+            <ul class="contact-list" aria-label="Contact information">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M2 4L8 9L14 4M2 3H14C14.55 3 15 3.45 15 4V12C15 12.55 14.55 13 14 13H2C1.45 13 1 12.55 1 12V4C1 3.45 1.45 3 2 3Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+                <a href="mailto:chand.80767@gmail.com">xxxxx@gmail.com</a>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M3 2.5C3 2.5 4.5 2 5.5 4.5L6 6C6 6 6.5 7 5.5 7.5L4.5 8C4.5 8 5 9.5 6.5 11S9.5 12.5 9.5 12.5L10 11.5C10.5 10.5 11.5 11 11.5 11L13 11.5C15.5 12.5 15 14 15 14C14.5 15.5 13 14.5 10 13C5 10.5 2 5 2.5 3C2.5 3 2.5 2.5 3 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+                <a href="tel:+919xxxxxx">(+91) 98xxxxxx</a>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M8 1.5C5.51 1.5 3.5 3.51 3.5 6C3.5 9.5 8 14.5 8 14.5C8 14.5 12.5 9.5 12.5 6C12.5 3.51 10.49 1.5 8 1.5ZM8 7.5C7.17 7.5 6.5 6.83 6.5 6C6.5 5.17 7.17 4.5 8 4.5C8.83 4.5 9.5 5.17 9.5 6C9.5 6.83 8.83 7.5 8 7.5Z" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+                <span>Delhi, India</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.11-.77.42-1.29.76-1.59-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013.01-.4c1.02 0 2.05.13 3.01.4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <a href="https://github.com/rahul-tech-eng" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">github.com/rahul</a>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+                </svg>
+                <a href="https://www.linkedin.com/in/rahul-chand-6aa46a337/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">linkedin.com/in/rahul-chand</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form -->
+          <div>
+            <form
+              id="contact-form"
+              class="contact-form"
+              novalidate
+              aria-label="Contact form"
+              method="POST"
+              action="/api/contact"
+            >
+              <!-- Live status region -->
+              <div
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">
+                    Name <span class="req" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="fname-error"
+                    placeholder="Your name"
+                  />
+                  <span id="fname-error" class="field-error" role="alert" aria-live="assertive"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="femail">
+                    Email <span class="req" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="femail"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="femail-error"
+                    placeholder="you@email.com"
+                  />
+                  <span id="femail-error" class="field-error" role="alert" aria-live="assertive"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="fsubject">Subject</label>
+                <input
+                  type="text"
+                  id="fsubject"
+                  name="subject"
+                  placeholder="Project inquiry / Job opportunity"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fmessage">
+                  Message <span class="req" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="fmessage"
+                  name="message"
+                  required
+                  aria-required="true"
+                  aria-describedby="fmessage-error fmessage-hint"
+                  placeholder="Tell me about your project or opportunity…"
+                  minlength="10"
+                ></textarea>
+                <span id="fmessage-hint" class="sr-only">Minimum 10 characters</span>
+                <span id="fmessage-error" class="field-error" role="alert" aria-live="assertive"></span>
+              </div>
+
+              <div class="form-submit">
+                <p class="privacy-note">Your details are kept private.</p>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  aria-describedby="form-status"
+                >
+                  Send Message
+                  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+                    <path d="M1.5 7H12.5M12.5 7L8.5 3M12.5 7L8.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <p class="footer-logo" aria-label="Rahul Chand">
+        RC<span aria-hidden="true">.</span>
+      </p>
+
+      <p class="footer-copy">
+        <small>© <time datetime="2026">2026</time> Rahul Chand. All rights reserved.</small>
+      </p>
+
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav-list" role="list">
+          <li>
+            <a href="https://github.com/rahul-tech-eng" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rahul-chand-6aa46a337/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a>
+          </li>
+          <li>
+            <a href="resume.html">Résumé</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <!-- ══ SCRIPTS ════════════════════════════════════════════════ -->
+  <script>
+    // ── Mobile Nav ────────────────────────────────────────────
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.getElementById('primary-nav');
+
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.setAttribute('data-open', String(!open));
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.setAttribute('data-open', 'false');
+      });
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && nav.getAttribute('data-open') === 'true') {
+        toggle.setAttribute('aria-expanded', 'false');
+        nav.setAttribute('data-open', 'false');
+        toggle.focus();
+      }
+    });
+
+    // ── Active nav on scroll ──────────────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-list a[href^="#"]');
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.setAttribute('aria-current',
+              link.getAttribute('href') === '#' + entry.target.id ? 'true' : 'false'
+            );
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(s => obs.observe(s));
+
+    // ── Form Validation ───────────────────────────────────────
+    const form      = document.getElementById('contact-form');
+    const statusBox = document.getElementById('form-status');
+
+    function validate(input) {
+      const errEl = document.getElementById(input.id + '-error');
+      let msg = '';
+
+      if (input.required && !input.value.trim()) {
+        msg = 'This field is required.';
+      } else if (input.type === 'email' && input.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+        msg = 'Enter a valid email address.';
+      } else if (input.minLength > 0 && input.value.trim().length < input.minLength) {
+        msg = `Please enter at least ${input.minLength} characters.`;
+      }
+
+      if (errEl) {
+        errEl.textContent = msg;
+        input.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      }
+      return !msg;
+    }
+
+    form.querySelectorAll('input[required], textarea[required]').forEach(f => {
+      f.addEventListener('blur', () => validate(f));
+    });
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const required = form.querySelectorAll('input[required], textarea[required]');
+      let valid = true;
+      required.forEach(f => { if (!validate(f)) valid = false; });
+
+      if (valid) {
+        statusBox.textContent = "Message sent! I'll get back to you soon.";
+        form.reset();
+      } else {
+        statusBox.textContent = 'Please fix the errors above.';
+        const first = form.querySelector('[aria-invalid="true"]');
+        if (first) first.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>
+   

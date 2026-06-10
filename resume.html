@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Résumé of Rahul Chand — Web Developer, B.Tech CS student at Jims Engineering Management Technical Campus, Delhi." />
+  <meta name="author" content="Rahul Chand" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f1923" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Résumé — Rahul Chand" />
+  <meta property="og:description" content="Web Developer skilled in HTML, CSS, JavaScript and MySQL." />
+  <meta property="og:url" content="https://rahulchand.dev/resume.html" />
+  <link rel="canonical" href="https://rahulchand.dev/resume.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Fira+Code:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <title>Résumé — Rahul Chand</title>
+
+  <style>
+    :root {
+      --bg:        #0f1923;
+      --bg2:       #162030;
+      --bg3:       #1c2a3a;
+      --teal:      #1db88a;
+      --teal-dim:  #169e75;
+      --text:      #e8efe8;
+      --text-muted:#8a9daa;
+      --border:    rgba(29,184,138,0.18);
+      --syne:      'Syne', sans-serif;
+      --code:      'Fira Code', monospace;
+      --body:      'Outfit', sans-serif;
+      --gap:       clamp(1rem, 4vw, 2.5rem);
+      --max:       1100px;
+      --r:         4px;
+      --tr:        0.2s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: clamp(14px, 1vw + 12px, 16px); }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body);
+      font-weight: 300;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(29,184,138,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(29,184,138,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      z-index: 9999;
+      background: var(--teal);
+      color: var(--bg);
+      padding: 0.5rem 1.2rem;
+      font-family: var(--code);
+      font-size: 0.8rem;
+      text-decoration: none;
+      border-radius: var(--r);
+      transition: top var(--tr);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: var(--r); }
+    :focus:not(:focus-visible) { outline: none; }
+
+    h1, h2, h3 { font-family: var(--syne); line-height: 1.1; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; }
+    h2 { font-size: 1rem; font-weight: 700; }
+    h3 { font-size: 0.95rem; font-weight: 700; }
+
+    a { color: inherit; text-decoration: none; transition: color var(--tr); }
+    a:hover { color: var(--teal); }
+
+    .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--gap); position: relative; z-index: 1; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15,25,35,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .site-logo { font-family: var(--syne); font-size: 1.1rem; font-weight: 800; }
+    .site-logo span { color: var(--teal); }
+
+    .nav-list { list-style: none; display: flex; gap: 0.2rem; }
+    .nav-list a {
+      display: block;
+      padding: 0.35rem 0.75rem;
+      font-family: var(--code);
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border: 1px solid transparent;
+      border-radius: var(--r);
+      transition: color var(--tr), border-color var(--tr);
+    }
+    .nav-list a:hover,
+    .nav-list a[aria-current="page"] { color: var(--teal); border-color: var(--border); }
+
+    /* Page header */
+    .page-top {
+      padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-top-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .page-tag {
+      font-family: var(--code);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.3rem;
+    }
+    .contact-meta p {
+      font-family: var(--code);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    .contact-meta a { color: var(--teal); }
+    .contact-meta a:hover { text-decoration: underline; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.2rem;
+      font-family: var(--code);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      border-radius: var(--r);
+      border: 1px solid;
+      cursor: pointer;
+      transition: background var(--tr), color var(--tr), border-color var(--tr);
+    }
+    .btn-teal { background: #23312d; color: var(--bg); border-color: var(--teal); }
+    .btn-teal:hover { background: var(--teal-dim); border-color: var(--teal-dim); }
+
+    /* Resume layout */
+    .resume-wrap {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 0;
+      min-height: 80vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Sidebar */
+    .resume-side {
+      border-right: 1px solid var(--border);
+      padding: 2.5rem var(--gap) 2.5rem 0;
+    }
+
+    .side-block { margin-bottom: 2.5rem; }
+
+    .side-heading {
+      font-family: var(--code);
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* skills in sidebar */
+    .side-group { margin-bottom: 1rem; }
+    .side-group-label {
+      font-family: var(--code);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    .side-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      list-style: none;
+    }
+    .side-pills li {
+      font-family: var(--code);
+      font-size: 0.65rem;
+      padding: 0.18rem 0.5rem;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--text);
+    }
+
+    /* education in sidebar */
+    .edu-entry { margin-bottom: 1.1rem; }
+    .edu-entry:last-child { margin-bottom: 0; }
+    .edu-deg { font-family: var(--syne); font-size: 0.82rem; font-weight: 700; margin-bottom: 0.15rem; }
+    .edu-sch { font-family: var(--code); font-size: 0.65rem; color: var(--teal); margin-bottom: 0.1rem; }
+    .edu-yr  { font-family: var(--code); font-size: 0.62rem; color: var(--text-muted); }
+
+    /* Main content */
+    .resume-main {
+      padding: 2.5rem 0 2.5rem var(--gap);
+    }
+
+    .r-section { margin-bottom: 2.5rem; }
+    .r-section:last-child { margin-bottom: 0; }
+
+    .r-section-head {
+      font-family: var(--code);
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* objective */
+    .objective-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 68ch;
+    }
+
+    /* project entry */
+    .r-project { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px dashed var(--border); }
+    .r-project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .r-proj-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.4rem;
+    }
+
+    .r-proj-name { font-family: var(--syne); font-size: 1rem; font-weight: 700; }
+    .r-proj-date { font-family: var(--code); font-size: 0.65rem; color: var(--text-muted); white-space: nowrap; margin-top: 0.15rem; }
+    .r-proj-tech { font-family: var(--code); font-size: 0.7rem; color: var(--teal); margin-bottom: 0.75rem; }
+
+    .r-proj-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .r-proj-list li {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.6;
+    }
+    .r-proj-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-size: 0.65rem;
+      top: 0.22em;
+    }
+
+    /* cert */
+    .r-cert { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px dashed var(--border); }
+    .r-cert:last-child { margin-bottom: 0; border-bottom: none; }
+    .r-cert-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.2rem; }
+    .r-cert-name { font-family: var(--syne); font-size: 0.95rem; font-weight: 700; }
+    .r-cert-date { font-family: var(--code); font-size: 0.65rem; color: var(--text-muted); white-space: nowrap; }
+    .r-cert-issuer { font-family: var(--code); font-size: 0.7rem; color: var(--teal); margin-bottom: 0.5rem; }
+    .r-cert-desc { font-size: 0.84rem; color: var(--text-muted); line-height: 1.65; max-width: 62ch;}
+     
+
+
+    /* Footer */
+    .site-footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 1.75rem 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; position: relative; z-index: 1; }
+    .footer-logo { font-family: var(--syne); font-size: 1rem; font-weight: 800; }
+    .footer-logo span { color: var(--teal); }
+    .footer-copy { font-family: var(--code); font-size: 0.65rem; color: var(--text-muted); }
+    .f-links { list-style: none; display: flex; gap: 1.1rem; }
+    .f-links a { font-family: var(--code); font-size: 0.68rem; color: var(--text-muted); transition: color var(--tr); }
+    .f-links a:hover { color: var(--teal); }
+
+    @media (max-width: 700px) {
+      .resume-wrap { grid-template-columns: 1fr; }
+      .resume-side { border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 0; }
+      .resume-main { padding: 2rem 0; }
+      .page-top-inner { flex-direction: column; align-items: flex-start; }
+      .contact-meta { align-items: flex-start; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+
+    @media print {
+      .site-header, .site-footer, .btn { display: none !important; }
+      body { background: white; color: black; }
+      body::before { display: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahul Chand",
+    "email": "xxxx@gmail.com",
+    "telephone": "+919xxxxxx",
+    "jobTitle": "Web Developer",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Jims Engineering Management Technical Campus" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" }
+  }
+  </script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Rahul Chand — Home">RC<span aria-hidden="true">.</span></a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="resume.html" aria-current="page">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page top -->
+  <div class="page-top" role="region" aria-label="Page introduction">
+    <div class="container">
+      <div class="page-top-inner">
+        <div>
+          <p class="page-tag">Résumé</p>
+          <h1>Rahul Chand</h1>
+        </div>
+        <div class="contact-meta" aria-label="Contact details">
+          <p><a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a></p>
+          <p><a href="tel:+919xxxxxxx">(+91) 9xxxxxxxx</a></p>
+          <p>Delhi, India</p>
+          <a
+            href="https://drive.google.com/file/d/1iqDzPs6IIwI2owl2KwGrMRRzvFys1bEF/view?usp=sharing  "
+            class="btn btn-teal"
+            download
+            aria-label="Download résumé as PDF"
+            style="margin-top:0.5rem"
+          >
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+              <path d="M7 2V9M7 9L4 6M7 9L10 6M2 11H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main id="main-content">
+    <div class="container">
+      <div class="resume-wrap">
+
+        <!-- Sidebar -->
+        <aside aria-label="Skills and education" class="resume-side">
+
+          <section class="side-block" aria-labelledby="s-skills">
+            <h2 id="s-skills" class="side-heading">Skills</h2>
+
+            <div class="side-group">
+              <span class="side-group-label">Web Technologies</span>
+              <ul class="side-pills" aria-label="Web technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="side-group">
+              <span class="side-group-label">Programing Languages</span>
+              <ul class="side-pills" aria-label="Programming languages">
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+              </ul>
+            </div>
+
+            <div class="side-group">
+              <span class="side-group-label">Database</span>
+              <ul class="side-pills" aria-label="Database">
+                <li>MySQL</li>
+              </ul>
+            </div>
+          
+            <div class="side-group">
+              <span class="side-group-label">Tools</span>
+              <ul class="side-pills" aria-label="Database">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>vs code</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="side-block" aria-labelledby="s-edu">
+            <h2 id="s-edu" class="side-heading">Education</h2>
+
+            <div class="edu-entry">
+              <p class="edu-deg">B.Tech — Computer Science</p>
+              <p class="edu-sch">Jims Engineering Management Technical Campus</p>
+              <p class="edu-yr"><time datetime="2024">2024</time> — <time datetime="2028">2028</time></p>
+            </div>
+
+            <div class="edu-entry">
+              <p class="edu-deg">XII — CBSE</p>
+              <p class="edu-sch">Kendriya Vidyalaya Rk.puram</p>
+              <p class="edu-yr">Delhi · <time datetime="2024">2024</time></p>
+            </div>
+          </section>
+
+          <section class="side-block" aria-labelledby="s-links">
+            <h2 id="s-links" class="side-heading">Links</h2>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem">
+              <li>
+                <a
+                  href="https://github.com/rahul-tech-eng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub (opens in new tab)"
+                  style="font-family:var(--code);font-size:0.72rem;color:var(--teal)"
+                >
+                  github.com/rahul
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rahul-chand-6aa46a337/"
+
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn (opens in new tab)"
+                  style="font-family:var(--code);font-size:0.72rem;color:var(--teal)"
+                >
+                  linkedin.com/in/rahul-chand
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </aside>
+
+        <!-- Main column -->
+        <div class="resume-main">
+
+          <section class="r-section" aria-labelledby="r-obj">
+            <h2 id="r-obj" class="r-section-head">Career Objective</h2>
+            <p class="objective-text">
+              Motivated Computer Science student with skills in HTML, CSS, JavaScript, and MySQL. Seeking a Web Development internship to apply my technical skills, build real-world projects, and contribute to creating responsive and user-friendly web applications.
+            </p>
+          </section>
+
+          <section class="r-section" aria-labelledby="r-proj">
+            <h2 id="r-proj" class="r-section-head">Projects</h2>
+
+            <article class="r-project" aria-labelledby="rp1">
+              <div class="r-proj-header">
+                <div>
+                  <h3 id="rp1" class="r-proj-name">Calculator Web Application</h3>
+                  <p class="r-proj-tech">HTML · CSS · JavaScript</p>
+                </div>
+                <time class="r-proj-date" datetime="2026-05">May 2026</time>
+              </div>
+              <ul class="r-proj-list" aria-label="Project details">
+                <li>Implemented basic and scientific mathematical operations.</li>
+                <li>Designed a responsive and user-friendly interface.</li>
+                <li>Used JavaScript for real-time calculations and functionality.</li>
+              </ul>
+            </article>
+
+            <article class="r-project" aria-labelledby="rp2">
+              <div class="r-proj-header">
+                <div>
+                  <h3 id="rp2" class="r-proj-name">Tic Tac Toe Web Game</h3>
+                  <p class="r-proj-tech">HTML · CSS · JavaScript</p>
+                </div>
+                <time class="r-proj-date" datetime="2026-03">March 2026</time>
+              </div>
+              <ul class="r-proj-list" aria-label="Project details">
+                <li>Implemented core game logic including turn management, win detection, and draw conditions using JavaScript.</li>
+                <li>Designed a responsive and user-friendly interface with CSS styling.</li>
+              </ul>
+            </article>
+
+          </section>
+
+          <section class="r-section" aria-labelledby="r-cert">
+            <h2 id="r-cert" class="r-section-head">Certifications</h2>
+
+            <article class="r-cert" aria-labelledby="rc1">
+              <div class="r-cert-header">
+                <h3 id="rc1" class="r-cert-name">Generative AI Mastermind</h3>
+                <time class="r-cert-date" datetime="2025-11">Nov 2025</time>
+              </div>
+              <p class="r-cert-issuer">Outskill · Virtual</p>
+              <p class="r-cert-desc">
+                Attended the Generative AI Mastermind Webinar organized by Outskill,
+                covering fundamentals of Generative AI, prompt engineering, AI automation
+                tools, custom GPT creation, and practical AI applications for content creation.
+              </p>
+            </article>
+            <div class="certification-item">
+  <h3></h3>
+  <!-- rest of cert content -->
+</div>
+            
+            <article class="r-cert" aria-labelledby="rc2">
+              <div class="r-cert-header">
+                <h3 id="rc1" class="r-cert-name">Introduction to Generative AI</h3>
+                <time class="r-cert-date" datetime="2025-11">July 2025</time>
+              </div>
+              <p class="r-cert-issuer">Google Cloud (Coursera)</p>
+              <p class="r-cert-desc">
+                Learned the fundamentals of Generative AI, Large Language Models (LLMs), and their real-world applications.
+                Gained understanding of how AI models generate text, images, and other content.
+                Explored basic concepts of machine learning and responsible AI practices.
+              </p>
+            </article>
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-logo" aria-label="Rahul Chand">RC<span aria-hidden="true">.</span></p>
+      <p class="footer-copy">
+        <small>© <time datetime="2026">2026</time> Rahul Chand</small>
+      </p>
+      <nav aria-label="Footer navigation">
+        <ul class="f-links" role="list">
+          <li><a href="https://github.com/rahul-tech-eng" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/rahul-chand-6aa46a337/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
